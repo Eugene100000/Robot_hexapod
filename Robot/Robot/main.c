@@ -1,11 +1,13 @@
 #include <avr/io.h>
+#include "servo.h"
 
 
 int main(void)
 {
-    /* Replace with your application code */
-    while (1) 
+	
+	
+    while(1)
     {
+        //TODO:: Please write your application code
     }
 }
-
