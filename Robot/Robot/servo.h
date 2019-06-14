@@ -5,15 +5,16 @@
 
 typedef struct
 {
-	signed short maxAngle;
-	signed short minAngle;
-	signed short currentAngle;
-	char reverse;
+    signed char maxAngle;
+    signed char minAngle;
+    signed char currentAngle;
+    char reverse;
 } Servo;
 
 static char servoNumber = 0;
 Servo servos[MAX_SERVO_NUMBER];
 
-signed char createServo(signed short minAngle, signed short maxAngle, char reverse, char port, char portBit);
+signed char createServo(signed char minAngle, signed char maxAngle, char reverse, char port, char portBit);
+void setAngle(signed char servoNumber, signed char angle);
 
 #endif /* SERVO_H_ */
