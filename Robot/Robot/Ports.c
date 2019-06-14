@@ -1,3 +1,4 @@
+#include <avr/io.h>
 #include "ports.h"
 
 void configurePortOutput(unsigned char port, unsigned char pin)

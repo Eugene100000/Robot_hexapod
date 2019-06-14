@@ -1,8 +1,6 @@
 #ifndef PORTS_H_
 #define PORTS_H_
 
-#include <avr/io.h>
-
 #define PORT_INPUT 0
 #define PORT_OUTPUT 1
 

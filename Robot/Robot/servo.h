@@ -8,13 +8,21 @@ typedef struct
     signed char maxAngle;
     signed char minAngle;
     signed char currentAngle;
-    char reverse;
+    char port;
+    char pin;
+
 } Servo;
 
-static char servoNumber = 0;
+static short servoNumber = 0;
+static short currentServo = 0;
+static short nextServo = 1;
+
+
 Servo servos[MAX_SERVO_NUMBER];
 
-signed char createServo(signed char minAngle, signed char maxAngle, char reverse, char port, char portBit);
-void setAngle(signed char servoNumber, signed char angle);
+signed char createServo(signed char minAngle, signed char maxAngle, char port, char pin);
+void setAngle(signed char servoId, signed char angle);
+
+void startServos();
 
 #endif /* SERVO_H_ */
