@@ -123,10 +123,13 @@
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="Ports.c">
+    <Compile Include="main.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="Ports.h">
+    <Compile Include="ports.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ports.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="servo.c">
